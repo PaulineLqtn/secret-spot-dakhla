@@ -40,6 +40,10 @@ const faqItems = document.querySelectorAll('.faq-item');
     });
   });
 
+document.getElementById("open-pdf").addEventListener("click", function () {
+    window.open("Book Excursion Secret Spot 2025.pdf", "_blank");
+});
+
 
 // // Initialize and add the map
 // let map;
