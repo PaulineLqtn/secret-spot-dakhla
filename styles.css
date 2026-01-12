@@ -9,11 +9,11 @@ body, html {
 :root {
     --text-color: #373737;
     /*--primary-color: #7A746A;*/
-    --primary-color: #968E83;
+    --primary-color: #c4baab;
     --primary-accent-color: #7A746A;
     --secondary-color: rgb(249, 247, 244);
     --third-color: rgba(244, 244, 244);
-    --bs-heading-color: #968E83;
+    --bs-heading-color: #c4baab;
 }
 
 .main-content p {
