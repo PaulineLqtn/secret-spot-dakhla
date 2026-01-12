@@ -207,6 +207,17 @@ h4 {
     height: 100%;
 }
 
+.photo-carousel img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .photo-carousel img {
+        height: 50vh;
+    }
+}
+
 footer {
     background-color: var(--bs-heading-color);
 }
