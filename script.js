@@ -41,7 +41,7 @@ const faqItems = document.querySelectorAll('.faq-item');
   });
 
 document.getElementById("open-pdf").addEventListener("click", function () {
-    window.open("Book Excursion Secret Spot 2025.pdf", "_blank");
+    window.open("https://www.canva.com/design/DAG892z7uxM/BrmPDxI-MmgS0qNDSH41-A/view?utm_content=DAG892z7uxM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h664ca7ad3f", "_blank");
 });
 
 
