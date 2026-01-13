@@ -43,6 +43,9 @@ const faqItems = document.querySelectorAll('.faq-item');
 document.getElementById("open-activities-pdf").addEventListener("click", function () {
     window.open("https://www.canva.com/design/DAG892z7uxM/BrmPDxI-MmgS0qNDSH41-A/view?utm_content=DAG892z7uxM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h664ca7ad3f", "_blank");
 });
+document.getElementById("open-kitesurf-pdf").addEventListener("click", function () {
+    window.open("https://www.canva.com/design/DAG892z7uxM/BrmPDxI-MmgS0qNDSH41-A/view?utm_content=DAG892z7uxM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h664ca7ad3f", "_blank");
+});
 
 
 // // Initialize and add the map
