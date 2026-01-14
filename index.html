@@ -35,6 +35,7 @@
                         <li class="nav-item mx-3"><a class="nav-link" href="#">Tarifs</a></li>
                         <li class="nav-item mx-3"><a class="nav-link" href="#faq">FAQ</a></li>
                         <li class="nav-item mx-3"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="photos.html">Photos</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,6 +75,7 @@
                         <div class="col-md-4">
                             <h2 class="text-center pb-3 mb-4">Le lieu</h2>
                             <p>Niché entre océan et désert, le Secret Spot est un refuge simple et accueillant, à quelques pas de la lagune de Dakhla.<br>
+                            Situé à 5 minutes de la Dune Blanche et à 15 minutes du Speed Spot, le Secret Spot à un emplacement idéal pour faire des sessions de kite variées.<br>
                             Ici, le vent danse avec les dunes, les couchers de soleil embrasent le ciel, et le temps ralentit naturellement.<br>
                             Le Secret Spot, c’est un lieu de rencontres, de rires partagés autour d’un thé à la menthe, d’apéros au coin du feu ou de longues discussions sous un ciel étoilé.<br>
                             Un camp de base idéal pour les passionnés de kite comme pour ceux qui cherchent simplement un coin paisible pour se ressourcer.
@@ -88,7 +90,7 @@
                     <div class="row justify-content-around">
                         <div class="col-md-4">
                             <h2 class="text-center pb-3 mb-4">Le spot de kitesurf</h2>
-                            <p>À Dakhla, la navigation suit le souffle de l’océan.<br>
+                            <p>Au Secret Spot, la navigation suit le souffle de l’océan.<br>
                             Il est possible de naviguer sur le spot principal, devant le camp, jusqu’à trois heures avant et après la marée haute, lorsque la lagune offre ses plus belles conditions.<br>
                             Et lorsque la marée se retire, la Dune Blanche, accessible en 10 minutes de Land Rover, devient notre terrain de jeu — une parenthèse hors du temps, entre sable blanc, vent régulier et horizon infini.<br>
                             Pendant la demi-journée de marée basse, la session à la Dune Blanche est incluse dans le prix du séjour.<br>
@@ -110,9 +112,24 @@
                         </div>
                         <div class="col-md-4">
                             <h2 class="text-center pb-3 mb-4">Cours & Location</h2>
-                            <p>XXX</p>
+                            <p>Avant votre arrivée, nous vous demandons simplement de nous indiquer si vous souhaitez suivre des cours ou louer du matériel.<br>
+                            Une fois sur place, profitez d’une organisation souple et personnalisée, entièrement à la carte, en fonction de vos envies, de votre niveau et des conditions de vent du jour.
+                            </p>
+                            <p>
+                            Afin de vous offrir une expérience optimale, les spots d’enseignement s’adaptent au rythme des marées :<br>
+                            <strong>* À marée haute</strong>, les cours se déroulent face au Secret Spot, accessible directement depuis la case de voile.<br>
+                            <strong>* À marée basse</strong>, nous vous emmenons à la Dune Blanche en Land Rover, un cadre exceptionnel et parfaitement adapté à l’apprentissage et à la progression.
+                            </p>
+                            <p>Chaque session est pensée pour vous garantir confort, sécurité et plaisir, dans l’un des plus beaux spots de Dakhla.</p>
+                            
                             <div class="button-container mt-5 pb-4 pb-md-0">
                                 <button id="open-kitesurf-pdf">Découvrez nos tarifs</button>
+                                <div id="canvaPdfModal" class="pdf-modal">
+                                    <div class="pdf-modal-content">
+                                        <button class="pdf-close">&times;</button>
+                                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>  
                     </div>
@@ -124,8 +141,8 @@
                     <div class="row justify-content-around">
                         <div class="col-md-4">
                             <h2 class="text-center pb-3 mb-4">Restauration</h2>
-                            <p>La table est au cœur de la vie du Spot.<br>
-                            Chaque repas est une invitation à la découverte, mais surtout un moment de partage, autour de grandes tablées conviviales où voyageurs du monde entier échangent récits et éclats de rire.<br>
+                            <p>Le moment du repas est au cœur de la vie du Spot.<br>
+                            Chaque repas est une invitation à la découverte, mais surtout un moment de partage, autour de grandes tablées conviviales où nos voyageurs échangent récits et éclats de rire.<br>
                             Notre cuisine est maison, locale, colorée — inspirée des traditions marocaines et préparée avec amour.
                             </p>
                             <div class="button-container mt-5 pb-4 pb-md-0">
@@ -166,9 +183,16 @@
                             <p>Les journées au Secret Spot sont rythmées par la nature, les envies et les rencontres.<br>
                             Kite, excursions ou moments de repos dans le calme du désert… chacun vit son séjour à son rythme.<br>
                             Ce qui compte ici, c’est de vivre pleinement, de se connecter aux autres, de partager des expériences simples mais vraies.<br>
+                            Nous proposons diverses activités en dehors de la pratique du kitesurf afin de découvrir le désert sous toutes ses formes.
                             </p>
                             <div class="button-container mt-5 pb-4 pb-md-0">
                                 <button id="open-activities-pdf">Découvrez nos activités</button>
+                                <div id="canvaPdfModal" class="pdf-modal">
+                                    <div class="pdf-modal-content">
+                                        <button class="pdf-close">&times;</button>
+                                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -189,6 +213,7 @@
                             <p>La simplicité, parce qu’on croit que les choses vraies n’ont pas besoin d’artifice.<br>
                             La convivialité, parce que les plus beaux souvenirs se créent autour d’un bon repas, d’une session de kite ou d’une discussion tardive sous les étoiles.<br>
                             Le respect de la nature, parce qu’elle est notre cadre de vie, notre terrain de jeu, notre inspiration.<br><br>
+                            Nous mettons un point d’honneur à restreindre notre capacité d’accueil car rien n’est plus important pour notre équipe que de garder "l’âme du Secret Spot".<br><br>
                             Ici, on vit au rythme du vent et du soleil. On partage, on échange, on écoute.
                             Le Secret Spot est né de l’envie de créer un lieu humain, vivant, et inspirant — où chacun peut se sentir libre et bienvenu.
                             </p>
@@ -353,7 +378,7 @@
                                     <p class="faq-answer">
                                     Dakhla regorge de trésors à découvrir !  
                                     <br>Nous proposons : 🌊 des sessions de surf, des visites et balades dans le désert, et plein d’activités conviviales sur le camp : jeux de cartes, tarot, fléchettes…<br>
-                                    Retrouvez toutes nos suggestions dans l’onglet “Activités” de notre site.  
+                                    Retrouvez toutes nos suggestions dans l’onglet "Activités" de notre site.  
                                     Et bien sûr, n’hésitez pas à apporter vos jeux préférés pour des soirées animées 🌅
                                     </p>
                                 </div>
@@ -369,47 +394,6 @@
 
         </div>
 
-        <section class="photo-carousel pb-5">
-            <div class="container-fluid px-0">
-                <div id="secretSpotCarousel" class="carousel slide" data-bs-ride="carousel">
-
-                <!-- Indicateurs -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#secretSpotCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#secretSpotCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#secretSpotCarousel" data-bs-slide-to="2"></button>
-                </div>
-
-                <!-- Slides -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="ressources/images/EF3E4630-0767-46F0-A2E1-EAB71A28F473_1_201_a.jpeg" class="d-block w-100" alt="Secret Spot Dakhla">
-                    </div>
-
-                    <div class="carousel-item">
-                    <img src="ressources/images/20240211_111755.jpg" class="d-block w-100" alt="Kitesurf à Dakhla">
-                    </div>
-
-                    <div class="carousel-item">
-                    <img src="ressources/images/DSC_4739 2.jpg" class="d-block w-100" alt="Coucher de soleil Dakhla">
-                    </div>
-                </div>
-
-                <!-- Flèches -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#secretSpotCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#secretSpotCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-
-                </div>
-            </div>
-        </section>
-
-
-
         <footer>
             <div class="container">
                 <div class="row py-5 justify-content-between">
@@ -418,8 +402,6 @@
                     </div>
                     <div class="col-md-3">
                         <h3 class="pb-2 mb-3">Contactez nous</h3>
-                        <!-- <p>+212 6 72 38 54 68</p> -->
-                        <p>Whatsapp only : +33(0)789652986</p>
                         <p>secretspot.dakhla@gmail.com</p>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="mb-4 mb-md-0">
                             Contactez nous
@@ -468,7 +450,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="https://formspree.io/f/xblgqzvy" method="POST">
+                  <form action="https://submit-form.com/YNLfvWAzA" method="POST">
                     <div class="mb-3">
                       <label for="name" class="form-label">Nom</label>
                       <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
@@ -479,11 +461,15 @@
                     </div>
                     <div class="mb-3">
                       <label for="dates" class="form-label">Dates souhaitées</label>
-                      <input type="text" class="form-control" id="dates" name="dates" placeholder="Ex: 10 au 12 juillet" required>
+                      <input type="text" class="form-control" id="dates" name="dates" placeholder="Ex: 10 au 17 juillet" required>
                     </div>
                     <div class="mb-3">
                         <label for="nb-people" class="form-label">Nombre de personnes</label>
-                        <input type="text" class="form-control" id="peoples" name="peoples" placeholder="Ex: 1 Adulte & 2 enfants" required>
+                        <input type="text" class="form-control" id="peoples" name="peoples" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" name="message" placeholder="Votre message..."></textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
@@ -503,7 +489,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="https://formspree.io/f/mqapwyrw" method="POST">
+                  <form action="https://submit-form.com/yqm7oIKo" method="POST">
                     <div class="mb-3">
                       <label for="name" class="form-label">Nom</label>
                       <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
@@ -531,6 +517,7 @@
         <script src="script.js"></script>
         <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 
     </body>
