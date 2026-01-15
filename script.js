@@ -48,9 +48,19 @@ const iframe = modal.querySelector("iframe");
 const closeBtn = modal.querySelector(".pdf-close");
 
 openActivitiesBtn.addEventListener("click", function () {
-  iframe.src = "https://www.canva.com/design/DAG892z7uxM/view?embed";
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const url = "https://www.canva.com/design/DAG892z7uxM/view?embed";
+
+  if (isMobile) {
+    // Sur mobile, ouvrir dans un nouvel onglet
+    window.open(url, "_blank");
+  } else {
+    // Sur desktop, ouvrir dans l'iframe du modal
+    iframe.src = url;
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
 });
 
 closeBtn.addEventListener("click", function () {
@@ -68,7 +78,17 @@ modal.addEventListener("click", function (e) {
 });
 
 openKitesurfBtn.addEventListener("click", function () {
-  iframe.src = "https://www.canva.com/design/DAG-ZYQvK8w/view?embed";
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const url = "https://www.canva.com/design/DAG-ZYQvK8w/view?embed";
+
+  if (isMobile) {
+    // Sur mobile, ouvrir dans un nouvel onglet
+    window.open(url, "_blank");
+  } else {
+    // Sur desktop, ouvrir dans l'iframe du modal
+    iframe.src = url;
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
 });
