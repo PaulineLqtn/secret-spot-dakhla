@@ -8,7 +8,6 @@ body, html {
 
 :root {
     --text-color: #373737;
-    /*--primary-color: #7A746A;*/
     --primary-color: #c4baab;
     --primary-accent-color: #7A746A;
     --secondary-color: rgb(249, 247, 244);
@@ -121,6 +120,12 @@ h4 {
     color: var(--text-color) !important;
 }
 
+@media (max-width: 768px) {
+    h4 {
+        font-size: 0.9rem !important;
+    }
+}
+
 .section-img {
     max-width: 100%;
     height: auto;
@@ -191,8 +196,10 @@ h4 {
     display: block;
 }
 
-.faq-answer {
-    border-bottom: none;
+@media (max-width: 768px) {
+    .faq-answer {
+        font-size: 0.8rem;
+    }
 }
 
 .map-container {
@@ -222,57 +229,63 @@ h4 {
     }
 }
 
-footer {
-    background-color: var(--bs-heading-color);
-}
-
 footer p {
     color: var(--secondary-color);
     font-family: "Abel", sans-serif;
 }
 
-footer h3 {
-    font-family: "Lora", serif;
-    font-style: normal;
-    color: var(--text-color) !important;
-    border-bottom: 1px solid var(--text-color);
+.footer-banner {
+    position: relative; /* nécessaire pour que l'overlay se place par rapport à l'image */
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 50%;       /* centre verticalement */
+    left: 50%;      /* centre horizontalement */
+    transform: translate(-50%, -50%);
+    color: white;   /* texte en blanc sur l'image */
+    z-index: 2;
+    padding: 0 15px; /* pour que ça respire sur mobile */
+}
+
+.footer-overlay p {
+    font-size: 2.5rem; /* desktop par défaut */
 }
 
 .footer-logo {
+    max-height: 90px; /* ajuste selon tes besoins */
     max-width: 70%;
     height: auto;
-    display: block;
 }
 
-footer button {
-    font-family: "Abel", sans-serif;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
+@media (max-width: 768px) { /* tablette / mobile */
+    .footer-overlay p {
+        font-size: 1.4rem;
+    }
+    .footer-logo {
+        max-height: 70px;
+    }
 }
 
-footer button:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+@media (max-width: 480px) { /* petit mobile */
+    .footer-overlay p {
+        font-size: 1rem;
+    }
+    .footer-logo {
+        max-height: 40px;
+    }
 }
 
 .jp-logo {
-    width: 50px;
+    width: 90px;
 }
 
 .cabrinha-logo {
-    height: 15px;
+    height: 30px;
 }
 
 .neilpryde-logo {
-    width: 150px;
+    width: 300px;
 }
 
 .social-media {
@@ -327,17 +340,7 @@ footer button:hover {
 
 
 .photos-header {
-  padding: 140px 20px 60px;
-  background: #f6f6f6;
-}
-
-.photos-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.photos-header p {
-  color: --primary-accent-color;
+  padding: 100px 20px 20px;
 }
 
 .gallery-img {
