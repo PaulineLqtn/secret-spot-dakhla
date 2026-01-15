@@ -305,39 +305,77 @@ footer p {
     color: var(--text-color);
 }
 
-
-.pdf-modal {
-  display: none;
+.modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-.pdf-modal-content {
+.modal-content {
   position: relative;
-  width: 50%;
-  height: 90%;
-  margin: auto;
   background: white;
+  max-width: 800px;
+  width: 90%;
+  max-height: 95vh;
+  overflow-y: auto;
 }
 
-.pdf-modal iframe {
+#kitesurfModal .modal-content {
+    padding: 2rem;
+}
+
+.modal table {
   width: 100%;
-  height: 100%;
+  border-collapse: collapse;
 }
 
-.pdf-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 32px;
-  background: none;
-  border: none;
+.modal th,
+.modal td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#pdfContainer canvas {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.close-modal {
+  position: sticky;
+  top: 1.5rem;
+  right: 1.5rem;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* display: block; */
+
+  /* background: white; */
+  background-color: rgb(255, 255, 255);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: background-color 0.6s ease;
+  font-size: 2rem; 
   cursor: pointer;
   z-index: 10;
 }
 
+.close-modal:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.close-modal:active {
+    background-color: var(--primary-accent-color);
+    border: 1px solid var(--primary-accent-color);
+}
+
+#closeKitesurfBtn {
+    font-size: 2rem; 
+}
 
 .photos-header {
   padding: 100px 20px 20px;

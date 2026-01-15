@@ -41,54 +41,56 @@ const faqItems = document.querySelectorAll('.faq-item');
   });
 
 
-const openActivitiesBtn = document.getElementById("open-activities-pdf");
-const openKitesurfBtn = document.getElementById("open-kitesurf-pdf");
-const modal = document.getElementById("canvaPdfModal");
-const iframe = modal.querySelector("iframe");
-const closeBtn = modal.querySelector(".pdf-close");
+const kitesurfModal = document.getElementById("kitesurfModal");
+const content = document.getElementById("kitesurf-content");
 
-openActivitiesBtn.addEventListener("click", function () {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+document.getElementById("openKitesurfBtn").addEventListener("click", async () => {
+  kitesurfModal.style.display = "flex";
 
-  const url = "https://www.canva.com/design/DAG892z7uxM/view?embed";
-
-  if (isMobile) {
-    // Sur mobile, ouvrir dans un nouvel onglet
-    window.open(url, "_blank");
-  } else {
-    // Sur desktop, ouvrir dans l'iframe du modal
-    iframe.src = url;
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
+  try {
+    const response = await fetch("./content/kitesurf.md");
+    const markdown = await response.text();
+    content.innerHTML = marked.parse(markdown);
+  } catch (error) {
+    content.innerHTML = "Impossible de charger les tarifs.";
   }
 });
 
-closeBtn.addEventListener("click", function () {
-  modal.style.display = "none";
-  iframe.src = "";
-  document.body.style.overflow = "";
+document.getElementById("closeKitesurfBtn").addEventListener("click", () => {
+  kitesurfModal.style.display = "none";
 });
 
-modal.addEventListener("click", function (e) {
-  if (e.target === modal) {
-    modal.style.display = "none";
-    iframe.src = "";
-    document.body.style.overflow = "";
+
+const openBtn = document.getElementById("openActivitiesBtn");
+const activitiesModal = document.getElementById("activitiesModal");
+const closeActivitiesBtn = document.getElementById("closeActivities");
+const container = document.getElementById("pdfContainer");
+
+let pdfLoaded = false;
+
+openBtn.addEventListener("click", async () => {
+  activitiesModal.style.display = "flex";
+
+  if (pdfLoaded) return;
+  pdfLoaded = true;
+
+  const pdf = await pdfjsLib.getDocument("./content/Surf à L’Océan.pdf").promise;
+
+  for (let i = 1; i <= pdf.numPages; i++) {
+    const page = await pdf.getPage(i);
+    const viewport = page.getViewport({ scale: 1.5 });
+
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    await page.render({ canvasContext: context, viewport }).promise;
+    container.appendChild(canvas);
   }
 });
 
-openKitesurfBtn.addEventListener("click", function () {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  const url = "https://www.canva.com/design/DAG-ZYQvK8w/view?embed";
-
-  if (isMobile) {
-    // Sur mobile, ouvrir dans un nouvel onglet
-    window.open(url, "_blank");
-  } else {
-    // Sur desktop, ouvrir dans l'iframe du modal
-    iframe.src = url;
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
-  }
+closeActivitiesBtn.addEventListener("click", () => {
+  activitiesModal.style.display = "none";
 });

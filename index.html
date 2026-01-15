@@ -128,16 +128,17 @@
                             <strong>* À marée haute</strong>, les cours se déroulent face au Secret Spot, accessible directement depuis la case de voile.<br>
                             <strong>* À marée basse</strong>, nous vous emmenons à la Dune Blanche en Land Rover, un cadre exceptionnel et parfaitement adapté à l’apprentissage et à la progression.
                             </p>
-                            
                             <div class="button-container mt-5 pb-4 pb-md-0">
-                                <button id="open-kitesurf-pdf">Découvrez nos tarifs</button>
-                                <div id="canvaPdfModal" class="pdf-modal">
-                                    <div class="pdf-modal-content">
-                                        <button class="pdf-close">&times;</button>
-                                        <iframe src="" frameborder="0" allowfullscreen></iframe>
-                                    </div>
+                                <button id="openKitesurfBtn">Découvrez nos tarifs</button>
+                                <div id="kitesurfModal" class="modal">
+                                <div class="modal-content">
+                                    <button id="closeKitesurfBtn">✕</button>
+                                    <div id="kitesurf-content">Chargement...</div>
+                                </div>
                                 </div>
                             </div>
+                            
+
                         </div>
                         <div class="d-block d-md-none col-md-7 pb-4 pb-md-0">
                             <img src="ressources/images/DSC_4739 2.jpg" class="section-img">
@@ -199,13 +200,13 @@
                             Nous proposons diverses activités en dehors de la pratique du kitesurf afin de découvrir le désert sous toutes ses formes.
                             </p>
                             <div class="button-container mt-5 pb-4 pb-md-0">
-                                <button id="open-activities-pdf">Découvrez nos activités</button>
-                                <div id="canvaPdfModal" class="pdf-modal">
-                                    <div class="pdf-modal-content">
-                                        <button class="pdf-close">&times;</button>
-                                        <iframe src="" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
+                                <button id="openActivitiesBtn">Découvrez nos activités</button>
+                            </div>
+                            <div id="activitiesModal" class="modal">
+                                <div class="modal-content">
+                                    <button id="closeActivities" class="close-modal">✕</button>
+                                    <div id="pdfContainer"></div>
+                                </div>   
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -327,6 +328,7 @@
         </div>
           
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
         <script src="faq.js"></script>
         <script src="layout.js"></script>
         <script src="script.js"></script>
