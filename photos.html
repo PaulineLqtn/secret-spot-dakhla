@@ -12,7 +12,7 @@
 
 <body>
 
-  <!-- NAVBAR (tu peux reprendre exactement la même que sur index.html) -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -40,118 +40,19 @@
   <!-- GALERIE -->
   <section class="py-5">
     <div class="container">
-      <div class="row g-3">
-
-        <div class="col-6 col-md-4">
-          <a href="ressources/images/EF3E4630-0767-46F0-A2E1-EAB71A28F473_1_201_a.jpeg" class="glightbox">
-            <img src="ressources/images/EF3E4630-0767-46F0-A2E1-EAB71A28F473_1_201_a.jpeg" class="img-fluid gallery-img">
-          </a>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <a href="ressources/images/20240211_111755.jpg" class="glightbox">
-            <img src="ressources/images/20240211_111755.jpg" class="img-fluid gallery-img">
-          </a>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <a href="ressources/images/DSC_4739 2.jpg" class="glightbox">
-            <img src="ressources/images/DSC_4739 2.jpg" class="img-fluid gallery-img">
-          </a>
-        </div>
-
-        <!-- Duplique les blocs pour ajouter des photos -->
-
-      </div>
-
-      <div class="row g-3 py-3">
-
-        <div class="col-6 col-md-4">
-          <a href="ressources/images/EF3E4630-0767-46F0-A2E1-EAB71A28F473_1_201_a.jpeg" class="glightbox">
-            <img src="ressources/images/EF3E4630-0767-46F0-A2E1-EAB71A28F473_1_201_a.jpeg" class="img-fluid gallery-img">
-          </a>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <a href="ressources/images/20240211_111755.jpg" class="glightbox">
-            <img src="ressources/images/20240211_111755.jpg" class="img-fluid gallery-img">
-          </a>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <a href="ressources/images/DSC_4739 2.jpg" class="glightbox">
-            <img src="ressources/images/DSC_4739 2.jpg" class="img-fluid gallery-img">
-          </a>
-        </div>
-
-        <!-- Duplique les blocs pour ajouter des photos -->
-
-      </div>
+      <div class="row g-3" id="gallery"></div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-        <div class="container">
-            <div class="row py-5 justify-content-between">
-                <div class="col-md-2 d-none d-md-block">
-                    <img src="ressources/iconizer-Secret spot (2).svg" class="footer-logo">
-                </div>
-                <div class="col-md-3">
-                    <h3 class="pb-2 mb-3">Contactez nous</h3>
-                    <p>secretspot.dakhla@gmail.com</p>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="mb-4 mb-md-0">
-                        Contactez nous
-                    </button>
-                    <div class="commonninja_component pid-78aa54cc-f176-4ed4-b943-65a2371c6fea"></div>
-                    <!-- <p>PK 60 Route d'El Argoub</p>
-                    <p>73000 Dakhla MAROC</p> -->
-                </div>
-                <div class="col-md-3">
-                    <h3 class="pb-2 mb-3">Nos partenaires</h3>
-                    <p>
-                        <img src="ressources/output-onlinepngtools (1).png" class="footer-logo cabrinha-logo">
-                    </p>
-                    <p>
-                        <img src="ressources/output-onlinepngtools (2).png" class="footer-logo neilpryde-logo">
-                    </p>
-                    <p>
-                        <img src="ressources/output-onlinepngtools copie 2.png" class="footer-logo jp-logo">
-                    </p> 
-                        
-                </div>
-                <div class="col-md-2">
-                    <h3 class="pb-2 mb-3">Suivez nous</h3>
-                    <div class="social-media justify-content-between">
-                        <a href="https://web.facebook.com/Azinsecret" target="_blank">
-                            <img src="ressources/output-onlinepngtools.png" class="facebook-logo">
-                        </a>
-                        <a href="https://www.instagram.com/secretspot_dakhla" target="_blank">
-                            <img src="ressources/output-onlinepngtools copie.png" class="instagram-logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright text-center pt-3">
-            <p>© 2024 Secret Spot Dakhla.</p>
-        </div>
-    </footer>
+  <div id="footer"></div>
 
 
-    <script src="script.js"></script>
+    <script src="layout.js"></script>
+    <script src="scriptPhotos.js"></script>
     <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-    <script>
-        const lightbox = GLightbox({
-            touchNavigation: true,
-            loop: true,
-            width: "90%",
-            height: "90%"
-        });
-    </script>
 
 </body>
 </html>
