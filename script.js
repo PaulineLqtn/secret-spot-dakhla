@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
             navbar.style.backdropFilter = 'blur(0px)';
             navbar.classList.remove('scrolled');
             navLinks.forEach(function(link) {
-                link.style.color = '#FFF';
+                link.style.color = '#7A746A';
             });
         }, 40);
         
