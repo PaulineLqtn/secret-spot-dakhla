@@ -129,12 +129,18 @@ h4 {
 }
 
 .section-carousel {
-  width: 100%;
+  /* width: 100%; */
+  height: 450px;
+}
+
+.section-carousel .carousel-inner,
+.section-carousel .carousel-item {
+  height: 100%;
 }
 
 .section-carousel .section-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
