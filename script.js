@@ -1,3 +1,6 @@
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
+  
 // Ce script est facultatif, il est utilisé pour charger la photo de couverture en fonction de la taille de l'écran.
 window.addEventListener('scroll', function() {
     var coverPhoto = document.querySelector('.cover-photo');
