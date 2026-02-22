@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 :root {
@@ -56,6 +57,7 @@ body, html {
     left: 50%;
     display: flex;
     flex-direction: column;
+    transform: translateX(-50%);
 }
 
 .logo {
