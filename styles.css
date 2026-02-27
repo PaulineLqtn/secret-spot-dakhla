@@ -64,8 +64,15 @@ body, html {
   display: none;
 }
 
+.cover-4k {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .cover-desktop {
+    display: none;
+  }
+  .cover-4k {
     display: none;
   }
   .cover-mobile {
@@ -93,6 +100,18 @@ body, html {
   }
   .name {
     margin-top: 16px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .cover-desktop {
+    display: none;
+  }
+  .cover-mobile {
+    display: none;
+  }
+  .cover-4k {
+    display: block;
   }
 }
 
