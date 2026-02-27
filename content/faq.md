@@ -89,7 +89,8 @@ Non, pour des raisons d’hygiène, nous ne proposons pas la location de combina
 ## Peut-on pratiquer le wingfoil ou le kitefoil au Secret Spot ?
 
 Le kitefoil / wingfoil n’est pas adapté juste devant le camp (fonds trop peu profonds).
-Mais lors de la sortie à la Dune Blanche quotidienne (incluse dans le prix du séjour), la pratique est possible. Nous proposons également des cours (2 personnes par cours maximum). 
+Mais lors de la sortie à la Dune Blanche quotidienne (incluse dans le prix du séjour), la pratique est possible.
+Nous proposons également des cours (2 personnes par cours maximum). 
 
 ## Comment se déroulent les cours de kite ?
 

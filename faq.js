@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(res => res.text())
     .then(md => {
 
+      const renderer = new marked.Renderer();
+      renderer.link = function(href, title, text) {
+        return `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+      };
+      marked.setOptions({ renderer });
+
       const html = marked.parse(md);
       const container = document.getElementById("faq-content");
 

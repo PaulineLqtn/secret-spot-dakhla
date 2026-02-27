@@ -203,8 +203,10 @@ h4 {
     font-family: "Abel", sans-serif;
     text-transform: uppercase;
     padding: 15px 50px;
-    background-color: rgb(255, 255, 255);
-    color: var(--primary-color);
+    /* background-color: rgb(255, 255, 255);
+    color: var(--primary-color); */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: 1px solid var(--primary-color);
     letter-spacing: 4px;
     cursor: pointer;
@@ -212,8 +214,10 @@ h4 {
 }
 
 .button-container button:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    /* background-color: var(--primary-color);
+    color: var(--secondary-color); */
+    background-color: rgb(255, 255, 255);
+    color: var(--primary-color);
 }
 
 .button-container button:active {
