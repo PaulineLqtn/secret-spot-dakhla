@@ -88,7 +88,7 @@ Non, pour des raisons d’hygiène, nous ne proposons pas la location de combina
 
 ## Peut-on pratiquer le wingfoil ou le kitefoil au Secret Spot ?
 
-Le kitefoil / wingfoil n’est pas adapté juste devant le camp (fonds trop peu profonds).
+Le kitefoil n’est pas adapté juste devant le camp (fonds trop peu profonds).  
 Mais lors de la sortie à la Dune Blanche quotidienne (incluse dans le prix du séjour), la pratique est possible.
 Nous proposons également des cours (2 personnes par cours maximum). 
 
@@ -106,6 +106,6 @@ Nous proposons : 🌊 des sessions de surf, des visites et balades dans le dése
 Retrouvez toutes nos suggestions dans l’onglet "Activités" de notre site.  
 Et bien sûr, n’hésitez pas à apporter vos jeux préférés pour des soirées animées 🌅
 
-## Peut-on accéder au camp en voiture ?
+## Peut-on accéder au camp en voiture ? 
 
-La piste est praticable avec une voiture simple qui n’a pas 4 roues motrices. 
+La piste est praticable avec une voiture simple qui n’a pas 4 roues motrices.

@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(md => {
 
       const renderer = new marked.Renderer();
-      renderer.link = function(href, title, text) {
-        return `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+      renderer.link = (token) => {
+        const href = token.href;
+        const title = token.title ? ` title="${token.title}"` : "";
+        const text = token.text;
+        return `<a href="${href}"${title} target="_blank" rel="noopener noreferrer">${text}</a>`;
       };
       marked.setOptions({ renderer });
 
