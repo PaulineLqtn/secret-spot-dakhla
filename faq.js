@@ -4,15 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(res => res.text())
     .then(md => {
 
-      const renderer = new marked.Renderer();
-      renderer.link = (token) => {
-        const href = token.href;
-        const title = token.title ? ` title="${token.title}"` : "";
-        const text = token.text;
-        return `<a href="${href}"${title} target="_blank" rel="noopener noreferrer">${text}</a>`;
-      };
-      marked.setOptions({ renderer });
-
       const html = marked.parse(md);
       const container = document.getElementById("faq-content");
 
@@ -29,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="faq-answer">${content}</div>
           </div>
         `);
+      });
+
+      // 🔗 Ouvrir tous les liens dans un nouvel onglet (APRES injection)
+      container.querySelectorAll("a").forEach(link => {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
       });
 
       // ⚡ Ajouter le toggle FAQ APRÈS injection
