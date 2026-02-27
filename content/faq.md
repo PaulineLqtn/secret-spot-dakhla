@@ -80,7 +80,8 @@ Pour toute demande de privatisation, contactez Marie à :
 👉 Consultez les horaires des marées ici : [Horaires des marées à Dakhla](https://www.cabaigne.net/afrique/maroc/dakhla/horaire-marees.html).
 Le spot est à seulement 30 mètres du camp, et La Dune Blanche est accessible en 10 minutes de Land Rover.  
 Pendant la demi-journée de marée basse, nous organisons une session à la Dune Blanche — incluse dans le prix du séjour.<br>
-La période idéale pour faire du kitesurf à Dakhla est de mars à octobre. Durant ces mois, les vents soufflent entre 15 et 25 nœuds (30 et 50 km/h). Cependant, il est possible de naviguer toute l’année. Vous pouvez regarder les prévisions de vent sur ce [site](https://www.windguru.cz/501312).
+La période idéale pour faire du kitesurf à Dakhla est de mars à octobre. Durant ces mois, les vents soufflent entre 15 et 25 nœuds (30 et 50 km/h). Cependant, il est possible de naviguer toute l’année.<br>
+Vous pouvez regarder les prévisions de vent sur ce [site](https://www.windguru.cz/501312).
 
 ## Louez-vous des combinaisons ?
 
@@ -89,7 +90,7 @@ Non, pour des raisons d’hygiène, nous ne proposons pas la location de combina
 ## Peut-on pratiquer le wingfoil ou le kitefoil au Secret Spot ?
 
 Le kitefoil n’est pas adapté juste devant le camp (fonds trop peu profonds).  
-Mais lors de la sortie à la Dune Blanche quotidienne (incluse dans le prix du séjour), la pratique est possible.
+Mais lors de la sortie à la Dune Blanche quotidienne (incluse dans le prix du séjour), la pratique est possible.<br>
 Nous proposons également des cours (2 personnes par cours maximum). 
 
 ## Comment se déroulent les cours de kite ?
