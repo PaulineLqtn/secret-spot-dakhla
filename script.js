@@ -1,5 +1,5 @@
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
+// pdfjsLib.GlobalWorkerOptions.workerSrc =
+//   'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
   
 // Ce script est facultatif, il est utilisé pour charger la photo de couverture en fonction de la taille de l'écran.
 window.addEventListener('scroll', function() {
@@ -69,29 +69,44 @@ const activitiesModal = document.getElementById("activitiesModal");
 const closeActivitiesBtn = document.getElementById("closeActivities");
 const container = document.getElementById("pdfContainer");
 
-let pdfLoaded = false;
+// let pdfLoaded = false;
 
-openBtn.addEventListener("click", async () => {
+// openBtn.addEventListener("click", async () => {
+//   activitiesModal.style.display = "flex";
+
+//   if (pdfLoaded) return;
+//   pdfLoaded = true;
+
+//   const pdf = await pdfjsLib.getDocument("https://secretspot-media.s3.eu-west-3.amazonaws.com/content/activites.pdf").promise;
+
+//   for (let i = 1; i <= pdf.numPages; i++) {
+//     const page = await pdf.getPage(i);
+//     const viewport = page.getViewport({ scale: 1.5 });
+
+//     const canvas = document.createElement("canvas");
+//     const context = canvas.getContext("2d");
+
+//     canvas.width = viewport.width;
+//     canvas.height = viewport.height;
+
+//     await page.render({ canvasContext: context, viewport }).promise;
+//     container.appendChild(canvas);
+//   }
+// });
+
+openBtn.addEventListener("click", () => {
   activitiesModal.style.display = "flex";
 
-  if (pdfLoaded) return;
-  pdfLoaded = true;
+  if (container.innerHTML !== "") return;
 
-  const pdf = await pdfjsLib.getDocument("https://secretspot-media.s3.eu-west-3.amazonaws.com/content/activites.pdf").promise;
-
-  for (let i = 1; i <= pdf.numPages; i++) {
-    const page = await pdf.getPage(i);
-    const viewport = page.getViewport({ scale: 1.5 });
-
-    const canvas = document.createElement("canvas");
-    const context = canvas.getContext("2d");
-
-    canvas.width = viewport.width;
-    canvas.height = viewport.height;
-
-    await page.render({ canvasContext: context, viewport }).promise;
-    container.appendChild(canvas);
-  }
+  container.innerHTML = `
+    <iframe 
+      src="https://secretspot-media.s3.eu-west-3.amazonaws.com/content/activites.pdf"
+      width="100%"
+      height="100%"
+      style="border:none;"
+    ></iframe>
+  `;
 });
 
 closeActivitiesBtn.addEventListener("click", () => {
