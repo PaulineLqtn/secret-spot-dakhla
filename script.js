@@ -102,9 +102,8 @@ openBtn.addEventListener("click", () => {
   container.innerHTML = `
     <iframe 
       src="https://secretspot-media.s3.eu-west-3.amazonaws.com/content/activites.pdf"
-      width="100%"
-      height="100%"
-      style="border:none;"
+      loading="lazy"
+      allowfullscreen
     ></iframe>
   `;
 });
