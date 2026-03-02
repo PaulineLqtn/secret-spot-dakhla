@@ -21,7 +21,7 @@ const avisData = [
   },
 ];
 
-const container = document.getElementById("testimonial-row");
+const testimonialContainer = document.getElementById("testimonial-row");
 
 avisData.forEach(avis => {
   const col = document.createElement("div");
@@ -39,5 +39,5 @@ avisData.forEach(avis => {
     </div>
   `;
 
-  container.appendChild(col);
+  testimonialContainer.appendChild(col);
 });
