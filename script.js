@@ -64,6 +64,26 @@ document.getElementById("closeKitesurfBtn").addEventListener("click", () => {
 });
 
 
+const pensionModal = document.getElementById("pensionModal");
+const pensionContent = document.getElementById("pension-content");
+
+document.getElementById("openPensionBtn").addEventListener("click", async () => {
+  pensionModal.style.display = "flex";
+
+  try {
+    const response = await fetch("./content/pension.md");
+    const markdown = await response.text();
+    pensionContent.innerHTML = marked.parse(markdown);
+  } catch (error) {
+    pensionContent.innerHTML = "Impossible de charger les tarifs.";
+  }
+});
+
+document.getElementById("closePensionBtn").addEventListener("click", () => {
+  pensionModal.style.display = "none";
+});
+
+
 const openBtn = document.getElementById("openActivitiesBtn");
 const activitiesModal = document.getElementById("activitiesModal");
 const closeActivitiesBtn = document.getElementById("closeActivities");

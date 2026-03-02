@@ -47,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-3"><a class="nav-link" href="#lieu">Accueil</a></li>
-                        <li class="nav-item mx-3"><a class="nav-link" href="#classes">Tarifs</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="#tentes">Tarifs</a></li>
                         <li class="nav-item mx-3"><a class="nav-link" href="#faq">FAQ</a></li>
                         <li class="nav-item mx-3"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
                         <li class="nav-item mx-3"><a class="nav-link" href="photos.html">Photos</a></li>
@@ -166,70 +166,6 @@
                 </div>
             </section>
 
-            <section id="classes" class="py-3 py-md-5">
-                <div class="container">
-                    <div class="row justify-content-around align-items-center">
-                        <div class="d-none d-lg-block col-lg-7 pb-4 pb-mlg-0">
-                            <img src="https://secretspot-media.s3.eu-west-3.amazonaws.com/photos/A7403304-2.webp" class="section-img">
-                        </div>
-                        <div class="col-md-12 col-lg-4">
-                            <h2 class="text-center pb-3 mb-4">Cours & Location</h2>
-                            <p>Avant votre arrivée, nous vous demandons simplement de nous indiquer si vous souhaitez suivre des cours ou louer du matériel.<br>
-                            Une fois sur place, profitez d’une organisation souple et personnalisée, en fonction de vos envies, de votre niveau et des conditions de vent du jour.
-                            </p>
-                            <p>
-                            Afin de vous offrir une expérience optimale, les spots d’enseignement s’adaptent au rythme des marées :<br>
-                            <strong>* À marée haute</strong>, les cours se déroulent face au Secret Spot, accessible directement depuis la case de voile.<br>
-                            <strong>* À marée basse</strong>, nous vous emmenons à la Dune Blanche en Land Rover, un cadre exceptionnel et parfaitement adapté à l’apprentissage et à la progression.
-                            </p>
-                            <div class="button-container mt-5 pb-4 pb-lg-0">
-                                <button id="openKitesurfBtn">Découvrez nos tarifs</button>
-                                <div id="kitesurfModal" class="modal">
-                                <div class="modal-content">
-                                    <button id="closeKitesurfBtn">✕</button>
-                                    <div id="kitesurf-content">Chargement...</div>
-                                </div>
-                                </div>
-                            </div>
-                            
-
-                        </div>
-                        <div class="d-block d-lg-none col-lg-7 pb-4 pb-lg-0">
-                            <img src="https://secretspot-media.s3.eu-west-3.amazonaws.com/photos/A7403304-2.webp" class="section-img">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="restauration" class="py-3 py-md-5">
-                <div class="container">
-                    <div class="row justify-content-around align-items-center">
-                        <div class="col-md-12 col-lg-4">
-                            <h2 class="text-center pb-3 mb-4">Restauration</h2>
-                            <p>Le moment du repas est au cœur de la vie du Spot.<br>
-                            Chaque repas est une invitation à la découverte, mais surtout un moment de partage, autour de grandes tablées conviviales où nos voyageurs échangent récits et éclats de rire.<br>
-                            Notre cuisine est maison, locale, colorée — inspirée des traditions marocaines et préparée avec amour.
-                            </p>
-                            <div class="button-container mt-5 pb-4 pb-lg-0">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                                    Réservez votre séjour
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="carousel slide section-carousel"
-                                data-carousel
-                                data-id="restauration"
-                                data-images='[
-                                "A7400848.webp",
-                                "A7404448.webp"
-                                ]'>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section id="tentes" class="py-3 py-md-5">
                 <div class="container">
                     <div class="row justify-content-around align-items-center">
@@ -252,9 +188,16 @@
                             On y dort bercé par le silence, les rires lointains, ou le murmure du vent — et on s’y réveille souvent avec un grand sourire.
                             </p>
                             <div class="button-container mt-5 pb-4 pb-lg-0">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
                                     Contactez-nous
-                                </button>
+                                </button> -->
+                                <button id="openPensionBtn">Découvrez nos tarifs</button>
+                                <div id="pensionModal" class="modal">
+                                    <div class="modal-content">
+                                        <button id="closePensionBtn">✕</button>
+                                        <div id="pension-content">Chargement...</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="d-block d-lg-none col-lg-7 pb-4 pb-md-0">
@@ -266,6 +209,80 @@
                                 "A7404250.webp",
                                 "A7404263.webp",
                                 "A7402190-2.webp"
+                                ]'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="classes" class="py-3 py-md-5">
+                <div class="container">
+                    <div class="row justify-content-around align-items-center">
+                        <!-- <div class="d-block d-lg-none col-lg-7 pb-4 pb-lg-0">
+                            <img src="https://secretspot-media.s3.eu-west-3.amazonaws.com/photos/A7403304-2.webp" class="section-img">
+                        </div> -->
+                        <div class="col-md-12 col-lg-4">
+                            <h2 class="text-center pb-3 mb-4">Cours & Location</h2>
+                            <p>Avant votre arrivée, nous vous demandons simplement de nous indiquer si vous souhaitez suivre des cours ou louer du matériel.<br>
+                            Une fois sur place, profitez d’une organisation souple et personnalisée, en fonction de vos envies, de votre niveau et des conditions de vent du jour.
+                            </p>
+                            <p>
+                            Afin de vous offrir une expérience optimale, les spots d’enseignement s’adaptent au rythme des marées :<br>
+                            <strong>* À marée haute</strong>, les cours se déroulent face au Secret Spot, accessible directement depuis la case de voile.<br>
+                            <strong>* À marée basse</strong>, nous vous emmenons à la Dune Blanche en Land Rover, un cadre exceptionnel et parfaitement adapté à l’apprentissage et à la progression.
+                            </p>
+                            <div class="button-container mt-5 pb-4 pb-lg-0">
+                                <button id="openKitesurfBtn">Découvrez nos tarifs</button>
+                                <div id="kitesurfModal" class="modal">
+                                    <div class="modal-content">
+                                        <button id="closeKitesurfBtn">✕</button>
+                                        <div id="kitesurf-content">Chargement...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="col-lg-7 pb-4 pb-lg-0">
+                            <img src="https://secretspot-media.s3.eu-west-3.amazonaws.com/photos/A7403304-2.webp" class="section-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="restauration" class="py-3 py-md-5">
+                <div class="container">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="d-none d-lg-block col-lg-7 pb-4 pb-md-0">
+                            <div class="carousel slide section-carousel"
+                                data-carousel
+                                data-id="restauration"
+                                data-images='[
+                                "A7400848.webp",
+                                "A7404448.webp"
+                                ]'>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <h2 class="text-center pb-3 mb-4">Restauration</h2>
+                            <p>Le moment du repas est au cœur de la vie du Spot.<br>
+                            Chaque repas est une invitation à la découverte, mais surtout un moment de partage, autour de grandes tablées conviviales où nos voyageurs échangent récits et éclats de rire.<br>
+                            Notre cuisine est maison, locale, colorée — inspirée des traditions marocaines et préparée avec amour.
+                            </p>
+                            <div class="button-container mt-5 pb-4 pb-lg-0">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                    Réservez votre séjour
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none col-lg-7 pb-4 pb-md-0">
+                            <div class="carousel slide section-carousel"
+                                data-carousel
+                                data-id="restauration"
+                                data-images='[
+                                "A7400848.webp",
+                                "A7404448.webp"
                                 ]'>
                             </div>
                         </div>
