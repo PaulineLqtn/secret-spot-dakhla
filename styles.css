@@ -412,6 +412,10 @@ footer p {
     padding: 2rem;
 }
 
+#pensionModal .modal-content {
+    padding: 2rem;
+}
+
 .modal table {
   width: 100%;
   border-collapse: collapse;
