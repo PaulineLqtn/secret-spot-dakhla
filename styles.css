@@ -503,3 +503,38 @@ footer p {
 .whatsapp-widget:hover {
   transform: scale(1.05);
 }
+
+
+.testimonial-card {
+  background: var(--third-color);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.testimonial-header .google-logo {
+  /* width: 24px; */
+  height: 24px;
+}
+
+.stars {
+  color: #FFD700; /* doré */
+  font-size: 1rem;
+}
+
+.testimonial-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.testimonial-card span {
+  font-weight: bold;
+  color: #555;
+}
