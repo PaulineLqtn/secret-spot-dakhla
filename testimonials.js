@@ -15,8 +15,8 @@ const avisData = [
     etoiles: 5
   },
   {
-    texte: "Super accueil et organisation parfaite !",
-    auteur: "Marc L.",
+    texte: "Un véritable coup de cœur !<br>Le Secret Spot à Dakhla, c’est bien plus qu’un simple camp : c’est une petite bulle de bonheur au bout du monde. L’ambiance y est ultra conviviale, presque familiale — on s’y sent tout de suite chez soi. Malgré le vent absent durant notre semaine , on ne s’ennuie jamais : entre les sessions de kite, les balades, le surf, les jeux, les moments partagés autour d’un bon repas… les journées sont bien remplies et toujours dans la bonne humeur.<br>L’énergie du lieu est incroyable, et les rencontres y sont sincères. Une vraie parenthèse de déconnexion et de fun. À vivre et à revivre sans modération !",
+    auteur: "Arthur S.",
     etoiles: 5
   },
 ];

@@ -506,7 +506,7 @@ footer p {
 
 
 .testimonial-card {
-  background: var(--third-color);
+  background: #fff;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   text-align: left;
