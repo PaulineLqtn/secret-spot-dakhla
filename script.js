@@ -87,31 +87,9 @@ document.getElementById("closePensionBtn").addEventListener("click", () => {
 const openBtn = document.getElementById("openActivitiesBtn");
 const activitiesModal = document.getElementById("activitiesModal");
 const closeActivitiesBtn = document.getElementById("closeActivities");
-const container = document.getElementById("pdfContainer");
-
-let pdfLoaded = false;
 
 openBtn.addEventListener("click", async () => {
   activitiesModal.style.display = "flex";
-
-  if (pdfLoaded) return;
-  pdfLoaded = true;
-
-  const pdf = await pdfjsLib.getDocument("https://secretspot-media.s3.eu-west-3.amazonaws.com/content/activites.pdf").promise;
-
-  for (let i = 1; i <= pdf.numPages; i++) {
-    const page = await pdf.getPage(i);
-    const viewport = page.getViewport({ scale: 1.5 });
-
-    const canvas = document.createElement("canvas");
-    const context = canvas.getContext("2d");
-
-    canvas.width = viewport.width;
-    canvas.height = viewport.height;
-
-    await page.render({ canvasContext: context, viewport }).promise;
-    container.appendChild(canvas);
-  }
 });
 
 closeActivitiesBtn.addEventListener("click", () => {

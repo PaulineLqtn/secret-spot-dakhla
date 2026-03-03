@@ -470,17 +470,14 @@ footer p {
 
 .close-modal {
   position: sticky;
-  top: 1.5rem;
   right: 1.5rem;
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
   /* display: block; */
-
-  /* background: white; */
   background-color: rgb(255, 255, 255);
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  border: 0px;
   transition: background-color 0.6s ease;
   font-size: 2rem; 
   cursor: pointer;
