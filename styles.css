@@ -231,6 +231,16 @@ h4 {
   right: -60px;
 }
 
+@media (max-width: 768px) {
+  #testimonial-carousel .carousel-control-prev {
+    left: -10px;
+  }
+
+  #testimonial-carousel .carousel-control-next {
+    right: -10px;
+  }
+}
+
 #testimonial-carousel .carousel-control-prev-icon,
 #testimonial-carousel .carousel-control-next-icon {
   filter: invert(1);

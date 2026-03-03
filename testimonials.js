@@ -59,7 +59,13 @@ const avisData = [
 
 const testimonialInner = document.getElementById("testimonial-inner");
 
-// Fonction pour chunker le tableau par 4
+function getChunkSize() {
+  const width = window.innerWidth;
+  if (width < 576) return 2;      // mobile
+  if (width < 992) return 2;      // tablette (md)
+  return 4;                        // desktop (lg)
+}
+
 function chunkArray(array, size) {
   const result = [];
   for (let i = 0; i < array.length; i += size) {
@@ -68,18 +74,18 @@ function chunkArray(array, size) {
   return result;
 }
 
-const groupedAvis = chunkArray(avisData, 4);
+const groupedAvis = chunkArray(avisData, getChunkSize());
 
 groupedAvis.forEach((group, index) => {
   const carouselItem = document.createElement("div");
   carouselItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
 
   const row = document.createElement("div");
-  row.className = "row g-4";
+  row.className = "row g-4 justify-content-center";
 
   group.forEach(avis => {
     const col = document.createElement("div");
-    col.className = "col-12 col-md-6 col-lg-3";
+    col.className = "col-10 col-md-6 col-lg-3";
 
     col.innerHTML = `
       <div class="testimonial-card p-3 h-100">
