@@ -4,6 +4,8 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
 
   carousel.id = `carousel-${id}`
 
+  carousel.classList.add('carousel', 'slide')
+
   carousel.innerHTML = `
     <!-- INDICATEURS -->
     <div class="carousel-indicators">
@@ -29,12 +31,35 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
     </div>
 
     <!-- CONTROLES -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${id}" data-bs-slide="prev"> -->
-    <!-- <span class="carousel-control-prev-icon"></span> -->
-    <!-- </button> -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${id}" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </button>
 
-    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carousel-${id}" data-bs-slide="next"> -->
-    <!-- <span class="carousel-control-next-icon"></span> -->
-    <!-- </button> -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-${id}" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </button>
   `
+})
+
+document.querySelectorAll('[data-carousel]').forEach(carousel => {
+  const carouselInstance = new bootstrap.Carousel(carousel, {
+    interval: 3000,
+    ride: false,     // ne démarre pas automatiquement
+    pause: false,
+    wrap: true
+  })
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        carouselInstance.cycle()   // démarre
+      } else {
+        carouselInstance.pause()   // stop quand hors écran
+      }
+    })
+  }, {
+    threshold: 0.6 // démarre quand 60% visible
+  })
+
+  observer.observe(carousel)
 })
