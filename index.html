@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Secret Spot Dakhla</title>
+        <meta name="description" content="Secret Spot Dakhla est un camp de kitesurf entre lagune et désert. Hébergement en tentes sahariennes, sessions de kite, excursions et cuisine marocaine dans une ambiance conviviale.">
         <link rel="icon" type="image/x-icon" href="https://secretspot-media.s3.eu-west-3.amazonaws.com/logos/icon.webp">
         <link href='styles.css' rel='stylesheet'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preload" as="image" href="https://secretspot-media.s3.eu-west-3.amazonaws.com/photos/AP2A2056.webp">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMMWJPLLL0"></script>
         <script>
@@ -101,7 +102,7 @@
                         <div class="col-md-12 col-lg-4">
                             <h2 class="text-center pb-3 mb-4">Le lieu</h2>
                             <p>Niché entre océan et désert, le Secret Spot est un refuge simple et accueillant, à quelques pas de la lagune de Dakhla.<br>
-                            Situé à 5 minutes de la Dune Blanche et à 15 minutes du Speed Spot, le Secret Spot à un emplacement idéal pour faire des sessions de kite variées.<br>
+                            Situé à 5 minutes de la Dune Blanche et à 15 minutes du Speed Spot, le Secret Spot est un emplacement idéal pour faire des sessions de kite variées.<br>
                             Ici, le vent danse avec les dunes, les couchers de soleil embrasent le ciel, et le temps ralentit naturellement.<br>
                             Le Secret Spot, c’est un lieu de rencontres, de rires partagés autour d’un thé à la menthe, d’apéros au coin du feu ou de longues discussions sous un ciel étoilé.<br>
                             Un camp de base idéal pour les passionnés de kite comme pour ceux qui cherchent simplement un coin paisible pour se ressourcer.
@@ -384,24 +385,24 @@
                 <div class="modal-body">
                   <form action="https://submit-form.com/YNLfvWAzA" method="POST">
                     <div class="mb-3">
-                      <label for="name" class="form-label">Nom</label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+                      <label for="reservation-name" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="reservation-name" name="name" placeholder="Votre nom" required>
                     </div>
                     <div class="mb-3">
-                      <label for="email" class="form-label">Adresse e-mail</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+                      <label for="reservation-email" class="form-label">Adresse e-mail</label>
+                      <input type="email" class="form-control" id="reservation-email" name="email" placeholder="email@example.com" required>
                     </div>
                     <div class="mb-3">
-                      <label for="dates" class="form-label">Dates souhaitées</label>
-                      <input type="text" class="form-control" id="dates" name="dates" placeholder="Ex: 10 au 17 juillet" required>
+                      <label for="reservation-dates" class="form-label">Dates souhaitées</label>
+                      <input type="text" class="form-control" id="reservation-dates" name="dates" placeholder="Ex: 10 au 17 juillet" required>
                     </div>
                     <div class="mb-3">
-                        <label for="nb-people" class="form-label">Nombre de personnes</label>
-                        <input type="text" class="form-control" id="peoples" name="peoples" required>
+                        <label for="reservation-peoples" class="form-label">Nombre de personnes</label>
+                        <input type="text" class="form-control" id="reservation-peoples" name="peoples" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" name="message" placeholder="Votre message..."></textarea>
+                        <label for="reservation-message" class="form-label">Message</label>
+                        <textarea class="form-control" id="reservation-message" rows="4" name="message" placeholder="Votre message..."></textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
@@ -417,22 +418,22 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="reservationModalLabel">Formulaire de contact</h5>
+                  <h5 class="modal-title" id="contactModalLabel">Formulaire de contact</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
                 <div class="modal-body">
                   <form action="https://submit-form.com/yqm7oIKo" method="POST">
                     <div class="mb-3">
-                      <label for="name" class="form-label">Nom</label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+                      <label for="contact-name" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="contact-name" name="name" placeholder="Votre nom" required>
                     </div>
                     <div class="mb-3">
-                      <label for="email" class="form-label">Adresse e-mail</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+                      <label for="contact-email" class="form-label">Adresse e-mail</label>
+                      <input type="email" class="form-control" id="contact-email" name="email" placeholder="email@example.com" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" name="message" placeholder="Votre message..." required></textarea>
+                        <label for="contact-message" class="form-label">Message</label>
+                        <textarea class="form-control" id="contact-message" rows="4" name="message" placeholder="Votre message..." required></textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
@@ -456,10 +457,10 @@
         <script src="testimonials.js"></script>
 
         <a
-        href="https://wa.me/+330789652986"
+        href="https://wa.me/330789652986"
         class="whatsapp-widget"
         target="_blank"
-        aria-label="Chat on WhatsApp"
+        aria-label="Contactez-nous sur WhatsApp"
         >
         <img src="content/whatsapp.svg" alt="WhatsApp">
         </a>
