@@ -61,16 +61,6 @@ closeActivitiesBtn.addEventListener("click", () => {
   activitiesModal.style.display = "none";
 });
 
-document.querySelectorAll("form").forEach(form => {
-  form.addEventListener("submit", function() {
-    const btn = form.querySelector('button[type="submit"]');
-    if (btn) {
-      btn.disabled = true;
-      btn.innerText = "Envoi...";
-    }
-  });
-});
-
 
 function handleForm(formId, successId) {
 
