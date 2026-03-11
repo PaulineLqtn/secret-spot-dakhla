@@ -76,21 +76,17 @@ function handleForm(formId, successId) {
     try {
       const response = await fetch(form.action, {
         method: "POST",
-        body: formData,
-        headers: {
-          "Accept": "application/json"
-        }
+        body: formData
       });
       if (response.ok) {
         successMessage.classList.remove("d-none");
         form.reset();
         submitButton.innerHTML = "✓ Message envoyé";
       } else {
-        submitButton.disabled = false;
-        submitButton.innerHTML = "Envoyer";
+        throw new Error("Erreur serveur");
       }
     } catch (error) {
-      console.error("Erreur envoi formulaire", error);
+      console.error(error);
       submitButton.disabled = false;
       submitButton.innerHTML = "Envoyer";
     }
