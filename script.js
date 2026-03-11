@@ -61,8 +61,18 @@ closeActivitiesBtn.addEventListener("click", () => {
   activitiesModal.style.display = "none";
 });
 
+document.querySelectorAll("form").forEach(form => {
+  form.addEventListener("submit", function() {
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      btn.innerText = "Envoi...";
+    }
+  });
+});
 
-function handleForm(formId, successId) {
+
+/*function handleForm(formId, successId) {
 
   const form = document.getElementById(formId);
   const successMessage = document.getElementById(successId);
@@ -94,4 +104,4 @@ function handleForm(formId, successId) {
 }
 
 handleForm("reservation-form", "reservation-success");
-handleForm("contact-form", "contact-success");
+handleForm("contact-form", "contact-success");*/
