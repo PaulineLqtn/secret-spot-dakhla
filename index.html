@@ -74,7 +74,7 @@
                     </div>
                     <div class="row">
                         <div class="button-container">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
                                 Réservez votre séjour
                             </button>
                         </div>
@@ -272,7 +272,7 @@
                             Notre cuisine est maison, locale, colorée — inspirée des traditions marocaines et préparée avec amour.
                             </p>
                             <div class="button-container mt-5 pb-4 pb-lg-0">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
                                     Réservez votre séjour
                                 </button>
                             </div>
@@ -383,7 +383,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="https://submit-form.com/YNLfvWAzA" method="POST">
+                  <form id="reservation-form" action="https://submit-form.com/YNLfvWAzA" method="POST">
                     <div class="mb-3">
                       <label for="reservation-name" class="form-label">Nom</label>
                       <input type="text" class="form-control" id="reservation-name" name="name" placeholder="Votre nom" required>
@@ -404,6 +404,9 @@
                         <label for="reservation-message" class="form-label">Message</label>
                         <textarea class="form-control" id="reservation-message" rows="4" name="message" placeholder="Votre message..."></textarea>
                     </div>
+                    <div id="reservation-success" class="alert alert-success d-none">
+                    ✅ Merci pour votre message ! Nous vous répondrons rapidement.
+                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                         <button type="submit" class="btn btn-primary">Envoyer</button>
@@ -422,7 +425,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="https://submit-form.com/yqm7oIKo" method="POST">
+                  <form id="contact-form" action="https://submit-form.com/yqm7oIKo" method="POST">
                     <div class="mb-3">
                       <label for="contact-name" class="form-label">Nom</label>
                       <input type="text" class="form-control" id="contact-name" name="name" placeholder="Votre nom" required>
@@ -434,6 +437,9 @@
                     <div class="mb-3">
                         <label for="contact-message" class="form-label">Message</label>
                         <textarea class="form-control" id="contact-message" rows="4" name="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <div id="contact-success" class="alert alert-success d-none">
+                    ✅ Merci pour votre message ! Nous vous répondrons rapidement.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

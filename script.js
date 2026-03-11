@@ -70,3 +70,42 @@ document.querySelectorAll("form").forEach(form => {
     }
   });
 });
+
+
+function handleForm(formId, successId) {
+
+  const form = document.getElementById(formId);
+  const successMessage = document.getElementById(successId);
+  const submitButton = form.querySelector("button[type='submit']");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Envoi...";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+      if (response.ok) {
+        successMessage.classList.remove("d-none");
+        form.reset();
+        submitButton.innerHTML = "✓ Message envoyé";
+      } else {
+        submitButton.disabled = false;
+        submitButton.innerHTML = "Envoyer";
+      }
+    } catch (error) {
+      console.error("Erreur envoi formulaire", error);
+      submitButton.disabled = false;
+      submitButton.innerHTML = "Envoyer";
+    }
+  });
+}
+
+handleForm("reservation-form", "reservation-success");
+handleForm("contact-form", "contact-success");
