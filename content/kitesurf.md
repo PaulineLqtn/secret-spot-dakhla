@@ -3,9 +3,11 @@
 
 ### Cours de kitesurf (matériel inclus)
 ---
+Une aile par élève et 2 à 3 élèves de même niveau par professeur.
+
 | 2h | 4h | 6h | 8h | 10h | +10h |
 |----|----|----|----|-----|------|
-| 80 € | 160 € | 240 € | 320 € | 400 € | 35 €/h |
+| 80 € | 160 € | 240 € | 320 € | 400 € | 40 €/h |
 
 <br>
 <br>
@@ -13,7 +15,7 @@
 
 ### Location de matériel de kitesurf Cabrinha
 ---
-Assurance obligatoire : 30€ pour un jour / 50€ à partir de deux jours
+Assurance obligatoire : 30€ pour un jour / 50€ à partir de deux jours.
 
 |  | 1j | 2j | 3j | 4j | 5j | 6j | 7j |
 |--|----|----|----|----|----|----|----|
