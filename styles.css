@@ -488,6 +488,10 @@ footer p {
   padding: 8px;
 }
 
+.modal td {
+  font-family: "Abel", sans-serif;
+}
+
 #pdfContainer canvas {
   width: 100%;
   margin-bottom: 1.5rem;
