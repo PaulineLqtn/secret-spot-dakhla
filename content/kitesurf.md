@@ -22,19 +22,15 @@ Assurance obligatoire :
 * 30€ / 330 MAD pour un jour
 * 50€ / 550 MAD à partir de deux jours
 
-|  | 1j | 2j | 3j | 4j | 5j | 6j | 7j |
-|--|----|----|----|----|----|----|----|
-| Pack Complet | 60 € | 110 € | 150 € | 185 € | 215 € | 235 € | 250 € |
-| Voile + Barre | 50 € | 90 € | 130 € | 165 € | 200 € | 215 € | 230 € |
-| Board Twintip | 25 € | 40 € | 55 € | 70 € | 85 € | 90 € | 95 € |
-| Board Strapless | 30 € | 45 € | 60 € | 75 € | 90 € | 95 € | 100 € |
-| Harnais | 10 € | 15 € | 20 € | 25 € | 30 € | 35 € | 40 € |
-
-
 |                 | 1j      | 2j       | 3j       | 4j       | 5j       | 6j       | 7j       |
 | --------------- | ------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| Pack Complet    | 60 €    | 110 €    | 150 €    | 185 €    | 215 €    | 235 €    | 250 €    |
 | Pack Complet    | 660 MAD | 1210 MAD | 1650 MAD | 2035 MAD | 2365 MAD | 2585 MAD | 2750 MAD |
+| Voile + Barre   | 50 €    | 90 €     | 130 €    | 165 €    | 200 €    | 215 €    | 230 €    |
 | Voile + Barre   | 550 MAD | 990 MAD  | 1430 MAD | 1815 MAD | 2200 MAD | 2365 MAD | 2530 MAD |
+| Board Twintip   | 25 €    | 40 €     | 55 €     | 70 €     | 85 €     | 90 €     | 95 €     |
 | Board Twintip   | 275 MAD | 440 MAD  | 605 MAD  | 770 MAD  | 935 MAD  | 990 MAD  | 1045 MAD |
+| Board Strapless | 30 €    | 45 €     | 60 €     | 75 €     | 90 €     | 95 €     | 100 €    |
 | Board Strapless | 330 MAD | 495 MAD  | 660 MAD  | 825 MAD  | 990 MAD  | 1045 MAD | 1100 MAD |
+| Harnais         | 10 €    | 15 €     | 20 €     | 25 €     | 30 €     | 35 €     | 40 €     |
 | Harnais         | 110 MAD | 165 MAD  | 220 MAD  | 275 MAD  | 330 MAD  | 385 MAD  | 440 MAD  |
