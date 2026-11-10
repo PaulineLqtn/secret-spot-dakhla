@@ -7,7 +7,7 @@ _Le paiement se fera sur place à l’arrivée en CB ou cash. Si vous souhaitez 
 
 | Prestation | Prix (en €) | Prix (en MAD) |
 |----|------:|------:|
-| Pension complète | 50€ / jour | 550 MAD / jour |
+| Pension complète | 55€ / jour | 605 MAD / jour |
 | Logement dans des tentes confortables | inclus | inclus |
 | Petit déjéuner | inclus | inclus |
 | Déjeuner | inclus | inclus |
